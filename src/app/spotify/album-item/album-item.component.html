@@ -1,0 +1,9 @@
+<div class="card" *ngIf="album">
+    <img class="card-img-top" [src]='album.imagen' alt="">
+    <div class="card-body">
+        <h4>{{album.nombre}}</h4>
+        <div *ngFor="let artista of album.artistas">
+            <p>{{artista}}</p>
+        </div>
+    </div>
+</div>
